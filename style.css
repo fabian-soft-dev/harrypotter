@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#list-container {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para que no se estire demasiado */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre filas */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */ 
+}
+
+.row-card {
+    width: 300px    ;
+    background: white;
+    display: flex; /* Alineamos imagen y texto de lado a lado */
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 5px solid #740001; /* Detalle de color lateral */
+}
+
+.row-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Imagen circular */
+    object-fit: cover;
+    margin-right: 20px;
+    background-color: #eee;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.info p {
+    margin: 4px 0 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+#detalle {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(36, 26, 26);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#detalle img {
+    width: 400px;
+    border-radius: 10px;
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+#detalle h2 {
+    font-size: 2.5rem;
+}
+
+#detalle p {
+    font-size: 1.9rem;
+}
+
+h1{
+    font-size: 4rem;
+}
