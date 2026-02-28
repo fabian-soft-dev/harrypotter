@@ -1,26 +1,28 @@
 body {
+    margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #f4f4f9;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0e1a40, #000);
+    min-height: 100vh;
+    color: #f4f4f4;
 }
 
 #list-container {
     width: 100%;
-    max-width: 600px; /* Ancho máximo para que no se estire demasiado */
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Espacio entre filas */
-    display: grid; 
+    max-width: 1200px;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */ 
+    gap: 50px;
 }
 
+
 .row-card {
-    width: 300px    ;
+    width: 100%;
     background: white;
     display: flex; /* Alineamos imagen y texto de lado a lado */
     align-items: center;
@@ -52,7 +54,7 @@ body {
 }
 
 #detalle {
-    background: white;
+    background: rgb(128, 123, 123);;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgb(36, 26, 26);
@@ -79,4 +81,61 @@ body {
 
 h1{
     font-size: 4rem;
+    font-family: 'Cinzel', serif;
+}
+
+
+
+/* Tablet */
+@media (max-width: 900px) {
+    #list-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    #list-container {
+        grid-template-columns: 1fr;
+    }
+
+    .row-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row-card img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
+button{
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+#filtros {
+    margin-bottom: 25px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#filtros button {
+    font-family: 'Cinzel', serif;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #222;
+    color: #f4f4f4;
 }
