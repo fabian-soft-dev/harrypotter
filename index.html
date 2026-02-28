@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>HP API - Lista por Filas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <h1>Lista de Estudiantes - Hogwarts</h1>
     <p>Abre la <b>Consola (F12)</b> para ver la estructura de cada fila</p>
-    <p>Para más información sobre cada personaje <b>dar click en su tarjeta</b></p>
+    <p>Para más información de los personajes <b>dar click</b> en su tarjeta</p>
     
+    <div id="filtros">
+    <button data-house="Gryffindor">Gryffindor</button>
+    <button data-house="Hufflepuff">Hufflepuff</button>
+    <button data-house="Ravenclaw">Ravenclaw</button>
+    <button data-house="Slytherin">Slytherin</button>
+    <button data-house="none">Ninguna</button>
+    <button data-house="all">Todos</button>
+</div>
     <div id="list-container"></div>
-
-    <div id="botones">
-        
-    </div>
-
-
 
     <script src="script.js"></script>
 </body>
